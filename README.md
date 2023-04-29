@@ -7,6 +7,7 @@ This is a Python program that automatically updates your Instagram bio to show w
 I forgot that in lines 124-129 you need to fill out some oath stuff
 simply get those parameters from the dev portal
 just google it i forgot how i filled those
+https://developer.spotify.com
 
 ## Installation
 
