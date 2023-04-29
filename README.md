@@ -1,67 +1,78 @@
-Instagram Spotify Bio Updater
-A Python program that automatically updates your Instagram bio to show what you're currently listening to on Spotify.
+Ah, I see! Thank you for clarifying. Here is the README.md file based on your notes:
 
-Simplified Setup
-Install the required packages:
+# Instagram Spotify Bio Updater
 
-basic
-Copy
+This is a Python program that automatically updates your Instagram bio to show what you are listening to on Spotify. It's a cool way to share your music taste with your followers.
+
+
+# BIG NOTE
+I forgot that in lines 124-129 you need to fill out some oath stuff
+simply get those parameters from the dev portal
+just google it i forgot how i filled those
+
+## Installation
+
+To install the necessary packages, run:
+
+```
 pip install -r requirements.txt
 ```
 
-Fill in your Instagram username and password in setup.py, then run it:
+## Setup
 
-Copy
+1. Open the `setup.py` file and fill in your Instagram username and password. The setup file will dump a session ID, which prevents Instagram from blocking your login and saves you from having to log in every time you run the main program.
+
+2. Run the following command to set up your session:
+
+   ```
+   python3 setup.py
+   ```
+
+3. In `main.py`, go to line 18 and add your Spotify refresh token. Refer to [this article](https://dev.to/sabareh/how-to-get-the-spotify-refresh-token-176) to learn how to get your Spotify refresh token.
+
+4. If you encounter login issues, go to line 120 in `main.py` and fill in your Instagram username and password. This usually means that your setup was not done correctly.
+
+## Usage
+
+1. Open the `setup.py` file and fill in your Instagram username and password.
+
+    The `setup.py` file dumps a session ID that prevents Instagram from blocking your login and saves you from logging in every time in `main.py`.
+
+2. Run the `setup.py` file using the following command:
+
+```bash
 python3 setup.py
 ```
 
-In main.py, change line 18 to your Spotify refresh token. Refer to this guide for help.
+3. In `main.py`, go to line 18 and replace `YOUR_REFRESH_TOKEN` with your Spotify refresh token. Refer to [this guide](https://dev.to/sabareh/how-to-get-the-spotify-refresh-token-176) to get your refresh token.
 
-Run the program:
 
-smali
-Copy
+Note that the access token is left blank as the program generates a new access token every time the token info is expired, which saves you from some headaches.
+
+4. Run the `main.py` file using the following command:
+
+```bash
 python3 main.py
 ```
 
-If you have trouble logging in, check line 120 in `main.py` and fill in your username and password. Double-check your setup.
-Step-by-Step Setup
-Clone the repository:
+    If you can't log in, go to line 120 and fill in your username and password again. You probably did the setup wrong.
 
-Copy
-git clone repo_url
-```
+That's it! Your bio will now be updated automatically based on the song you're listening to on Spotify.
 
-Change directory:
+## Examples
 
-Copy
-cd InstagramSpotifyBio
-```
+Here's an example of how the bio will look with a long song name:
 
-Install the required packages:
+![Instagram Bio Example - Long Song Name](https://media.discordapp.net/attachments/621686347387764746/1101751027885158450/Screenshot_20230429-020507_Instagram.jpg?width=788&height=676)
 
-basic
-Copy
-pip install -r requirements.txt
-```
+And here's an example with a short song name:
 
-Open setup.py and fill in your Instagram username and password. Running setup.py will dump a session ID to prevent Instagram from blocking your login and to avoid logging in every time in main.py:
+![Instagram Bio Example - Short Song Name](https://media.discordapp.net/attachments/621686347387764746/1101751056653881444/Screenshot_20230429-012440_Instagram.jpg?width=971&height=676)
 
-Copy
-python3 setup.py
-```
+## Support
 
-In main.py, change line 18 to your Spotify refresh token. Refer to this guide for help.
+If you find this project useful, you can show your support by sending a donation to $psypolatic on Cash App.
 
-If you have trouble logging in, check line 120 in main.py and fill in your username and password. Double-check your setup.
+## Concerns
 
-Run the program:
-
-Copy
-python3 main.py
-```
-
-You're done!
-
-Support
-Support the project by sending to $psypolatic on Cash App. If you have any concerns, email joseml07@outlook.com.
+If you have any concerns or issues with this program, you can reach out to the developer at joseml07@outlook.com.
