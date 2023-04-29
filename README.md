@@ -1,5 +1,3 @@
-Ah, I see! Thank you for clarifying. Here is the README.md file based on your notes:
-
 # Instagram Spotify Bio Updater
 
 This is a Python program that automatically updates your Instagram bio to show what you are listening to on Spotify. It's a cool way to share your music taste with your followers.
