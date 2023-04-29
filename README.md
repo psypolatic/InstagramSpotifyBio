@@ -3,11 +3,15 @@
 This is a Python program that automatically updates your Instagram bio to show what you are listening to on Spotify. It's a cool way to share your music taste with your followers.
 
 
-# BIG NOTE
+# BIG NOTES
+
+You might get rate limited dont cry to me u can change wait value in line 96
+
 I forgot that in lines 124-129 you need to fill out some oath stuff
 simply get those parameters from the dev portal
 just google it i forgot how i filled those
 https://developer.spotify.com
+
 
 ## Installation
 
